@@ -1,7 +1,4 @@
-/*
-	Credits: https://github.com/standard/eslint-config-standard
-*/
-{
+module.exports = {
 	"env": {
 		"browser": true,
 		"node": true,
@@ -143,6 +140,6 @@
 		// IMPORT
     "import/first": "error",
     "import/no-absolute-path": ["error", { "esmodule": true, "commonjs": true, "amd": false }],
-		"import/no-empty-named-blocks": "error",
+		"import/no-empty-named-blocks": "error"
 	}
 }
