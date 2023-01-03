@@ -86,5 +86,12 @@
 		"@typescript-eslint/array-type": "warn", // https://typescript-eslint.io/rules/array-type,
 		"@typescript-eslint/consistent-generic-constructors": ["warn", "type-annotation"], // https://typescript-eslint.io/rules/consistent-generic-constructors/
 		"@typescript-eslint/consistent-indexed-object-style": "warn", // https://typescript-eslint.io/rules/consistent-indexed-object-style/
+		"@typescript-eslint/no-confusing-non-null-assertion": "warn", // https://typescript-eslint.io/rules/no-confusing-non-null-assertion/
+		"@typescript-eslint/no-unnecessary-condition": "warn", // https://typescript-eslint.io/rules/no-unnecessary-condition/
+    "@typescript-eslint/no-unnecessary-type-arguments": "warn", // https://typescript-eslint.io/rules/no-unnecessary-type-arguments/
+		"@typescript-eslint/prefer-for-of": "warn", // https://typescript-eslint.io/rules/prefer-for-of/
+		"@typescript-eslint/prefer-ts-expect-error": "warn" // https://typescript-eslint.io/rules/prefer-ts-expect-error/
+		
+		
 	}
 }
