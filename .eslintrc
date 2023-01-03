@@ -1,3 +1,6 @@
+/*
+	Credits: https://github.com/standard/eslint-config-standard
+*/
 {
 	"env": {
 		"browser": true,
@@ -30,6 +33,7 @@
 		"@typescript-eslint"
 	],
 	"rules": {
+		// ESLINT
 		"block-spacing": "error", // https://eslint.org/docs/latest/rules/block-spacing
 		"brace-style": ["error", "1tbs", { "allowSingleLine": true }], // https://eslint.org/docs/latest/rules/brace-style
 		"comma-dangle": ["error", "never"], // https://eslint.org/docs/latest/rules/comma-dangle
@@ -76,6 +80,11 @@
       "line": { "markers": ["*package", "!", "/", ",", "="] },
       "block": { "balanced": true, "markers": ["*package", "!", ",", ":", "::", "flow-include"], "exceptions": ["*"] }
     }], // https://eslint.org/docs/latest/rules/spaced-comment
-		"template-curly-spacing": ["error", "never"] // https://eslint.org/docs/latest/rules/template-curly-spacing
+		"template-curly-spacing": ["error", "never"], // https://eslint.org/docs/latest/rules/template-curly-spacing
+
+		//TYPESCRIPT ESLINT
+		"@typescript-eslint/array-type": "warn", // https://typescript-eslint.io/rules/array-type,
+		"@typescript-eslint/consistent-generic-constructors": ["warn", "type-annotation"], // https://typescript-eslint.io/rules/consistent-generic-constructors/
+		"@typescript-eslint/consistent-indexed-object-style": "warn", // https://typescript-eslint.io/rules/consistent-indexed-object-style/
 	}
 }
