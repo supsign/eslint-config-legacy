@@ -1,6 +1,6 @@
 {
   "name": "@supsign/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Eslint Config used for Supsign Projects",
   "main": "index.js",
   "engines": {
@@ -22,8 +22,6 @@
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "eslint": "^8.0.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
     "typescript": ">=3.9"
   },
   "devDependencies": {
@@ -32,8 +30,6 @@
   "dependencies": {    
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.6.0",
     "eslint-plugin-vue": "^9.8.0",
     "vue-eslint-parser": "^9.1.0"
   }
