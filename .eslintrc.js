@@ -7,12 +7,14 @@ module.exports = {
   'extends': [
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
+    'plugin:tailwindcss/recommended',
   ],
   'overrides': [{
     'files': ['*.vue'],
     'rules': {
-      'indent': 'off'
+      'indent': 'off',
+      'vue/multi-word-component-names': 'off'
     }
   }],
   'parser': 'vue-eslint-parser',
@@ -21,15 +23,19 @@ module.exports = {
     'ecmaVersion': 'latest',
     'sourceType': 'module'
   },
-  'plugins': ['vue', '@typescript-eslint'],
+  'plugins': [
+    'vue', '@typescript-eslint', 'tailwindcss'
+  ],
   'rules': {
     // never
-    'array-bracket-newline': ['error', { 'minItems': 3 }], // https://eslint.org/docs/latest/rules/array-bracket-newline
+    'array-bracket-newline': ['error', 'consistent'], // https://eslint.org/docs/latest/rules/array-bracket-newline
     'array-bracket-spacing': ['error', 'never'], // https://eslint.org/docs/latest/rules/array-bracket-spacing
     'arrow-spacing': 'error', // https://eslint.org/docs/latest/rules/arrow-spacing
     'block-spacing': 'error', // https://eslint.org/docs/latest/rules/block-spacing
     'brace-style': [
-      'error', '1tbs', { 'allowSingleLine': true }
+      'error', '1tbs', {
+        'allowSingleLine': true
+      }
     ], // https://eslint.org/docs/latest/rules/brace-style
     'comma-dangle': ['error', 'never'], // https://eslint.org/docs/latest/rules/comma-dangle
     'comma-spacing': 'error', // https://eslint.org/docs/latest/rules/comma-spacing
@@ -55,14 +61,14 @@ module.exports = {
     'no-unreachable-loop': 'error',
     'no-useless-rename': 'error', // https://eslint.org/docs/latest/rules/no-useless-rename
     'no-useless-return': 'error', // https://eslint.org/docs/latest/rules/no-useless-return
-    'no-use-before-define': 'error', //
+    // 'no-use-before-define': 'error', // Nervig
     'no-whitespace-before-property': 'error', // https://eslint.org/docs/latest/rules/no-whitespace-before-property
     'object-curly-newline': ['error', {
       'multiline': true,
       'consistent': true
     }], // https://eslint.org/docs/latest/rules/object-curly-newline
     'object-curly-spacing': ['error', 'always'], // https://eslint.org/docs/latest/rules/object-curly-spacing,
-    'object-property-newline': 'error', // https://eslint.org/docs/latest/rules/object-property-newline
+    // 'object-property-newline': 'error', // https://eslint.org/docs/latest/rules/object-property-newline
     'operator-linebreak': [
       'error', 'after', {
         'overrides': {
@@ -128,6 +134,7 @@ module.exports = {
     'vue/define-macros-order': 'error', // https://eslint.vuejs.org/rules/define-macros-order.html
     'vue/define-props-declaration': 'error', // https://eslint.vuejs.org/rules/define-props-declaration.html
     'vue/html-button-has-type': 'error', // https://eslint.vuejs.org/rules/html-button-has-type.html
+    'vue/no-boolean-default': 'error', // https://eslint.vuejs.org/rules/no-boolean-default.html
     'vue/no-empty-component-block': 'error', // https://eslint.vuejs.org/rules/no-empty-component-block.html
     'vue/no-ref-object-destructure': 'error', // https://eslint.vuejs.org/rules/no-ref-object-destructure.html#vue-no-ref-object-destructure
     'vue/no-required-prop-with-default': ['error', {
@@ -145,7 +152,9 @@ module.exports = {
     'vue/arrow-spacing': 'error', // https://eslint.vuejs.org/rules/arrow-spacing.html
     'vue/block-spacing': 'error', // https://eslint.vuejs.org/rules/block-spacing.html
     'vue/brace-style': [
-      'error', '1tbs', { 'allowSingleLine': true }
+      'error', '1tbs', {
+        'allowSingleLine': true
+      }
     ], // https://eslint.vuejs.org/rules/brace-style.html
     'vue/comma-dangle': ['error', 'never'], // https://eslint.vuejs.org/rules/comma-dangle.html
     'vue/comma-spacing': 'error', // https://eslint.vuejs.org/rules/comma-spacing.html
@@ -174,8 +183,10 @@ module.exports = {
     'vue/space-in-parens': 'error', // https://eslint.vuejs.org/rules/space-in-parens.html
     'vue/space-infix-ops': 'error', // https://eslint.vuejs.org/rules/space-infix-ops.html
     'vue/space-unary-ops': 'error', // https://eslint.vuejs.org/rules/space-unary-ops.html
-    'vue/template-curly-spacing': ['error', 'never'] // https://eslint.vuejs.org/rules/template-curly-spacing.html
+    'vue/template-curly-spacing': ['error', 'never'], // https://eslint.vuejs.org/rules/template-curly-spacing.html
 
+    // Tailwind
+    'tailwindcss/no-custom-classname': 'off'
     // IMPORT
     // "import/first": "error",
     // "import/no-absolute-path": ["error", { "esmodule": true, "commonjs": true, "amd": false }],
