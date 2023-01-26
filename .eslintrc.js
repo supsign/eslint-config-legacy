@@ -134,6 +134,13 @@ module.exports = {
     'vue/define-macros-order': 'error', // https://eslint.vuejs.org/rules/define-macros-order.html
     'vue/define-props-declaration': 'error', // https://eslint.vuejs.org/rules/define-props-declaration.html
     'vue/html-button-has-type': 'error', // https://eslint.vuejs.org/rules/html-button-has-type.html
+    'vue/html-closing-bracket-newline': ['error', {
+      'singleline': 'never',
+      'multiline': 'never'
+    }], // https://eslint.vuejs.org/rules/html-closing-bracket-newline.html
+    'vue/html-indent': ['error', 2, {
+      "closeBracket": 1,
+    }], // https://eslint.vuejs.org/rules/html-indent.html
     'vue/no-boolean-default': 'error', // https://eslint.vuejs.org/rules/no-boolean-default.html
     'vue/no-empty-component-block': 'error', // https://eslint.vuejs.org/rules/no-empty-component-block.html
     'vue/no-ref-object-destructure': 'error', // https://eslint.vuejs.org/rules/no-ref-object-destructure.html#vue-no-ref-object-destructure
