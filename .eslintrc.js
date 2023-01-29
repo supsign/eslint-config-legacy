@@ -8,7 +8,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:tailwindcss/recommended',
+    'plugin:tailwindcss/recommended'
   ],
   'overrides': [{
     'files': ['*.vue'],
@@ -139,11 +139,10 @@ module.exports = {
       'multiline': 'never'
     }], // https://eslint.vuejs.org/rules/html-closing-bracket-newline.html
     'vue/html-indent': ['error', 2, {
-      "closeBracket": 1,
+      'closeBracket': 1
     }], // https://eslint.vuejs.org/rules/html-indent.html
     'vue/no-boolean-default': 'error', // https://eslint.vuejs.org/rules/no-boolean-default.html
     'vue/no-empty-component-block': 'error', // https://eslint.vuejs.org/rules/no-empty-component-block.html
-    'vue/no-ref-object-destructure': 'error', // https://eslint.vuejs.org/rules/no-ref-object-destructure.html#vue-no-ref-object-destructure
     'vue/no-required-prop-with-default': ['error', {
       'autofix': false
     }], // https://eslint.vuejs.org/rules/no-required-prop-with-default.html

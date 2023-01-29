@@ -1,6 +1,6 @@
 {
   "name": "@supsign/eslint-config",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Eslint Config used for Supsign Projects",
   "main": "index.js",
   "engines": {
