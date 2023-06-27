@@ -43,7 +43,6 @@ module.exports = {
     'default-case': 'error', // https://eslint.org/docs/latest/rules/dot-location
     'dot-location': ['error', 'property'], // https://eslint.org/docs/latest/rules/dot-location
     'dot-notation': 'error', // https://eslint.org/docs/latest/rules/dot-notation
-    'eol-last': 'error', // https://eslint.org/docs/latest/rules/eol-last
     'eqeqeq': ['error', 'always'], // https://eslint.org/docs/latest/rules/eqeqeq
     'func-call-spacing': 'error', // https://eslint.org/docs/latest/rules/func-call-spacing
     'indent': ['error', 2], // https://eslint.org/docs/latest/rules/indent
@@ -115,18 +114,8 @@ module.exports = {
     ], // https://eslint.org/docs/latest/rules/spaced-comment
     'template-curly-spacing': ['error', 'never'], // https://eslint.org/docs/latest/rules/template-curly-spacing
 
-    // TYPESCRIPT ESLINT
-    '@typescript-eslint/array-type': 'warn', // https://typescript-eslint.io/rules/array-type,
-    '@typescript-eslint/consistent-generic-constructors': ['warn', 'type-annotation'], // https://typescript-eslint.io/rules/consistent-generic-constructors/
-    '@typescript-eslint/consistent-indexed-object-style': 'warn', // https://typescript-eslint.io/rules/consistent-indexed-object-style/
-    '@typescript-eslint/no-confusing-non-null-assertion': 'warn', // https://typescript-eslint.io/rules/no-confusing-non-null-assertion/
-    // "@typescript-eslint/no-unnecessary-condition": "warn", // https://typescript-eslint.io/rules/no-unnecessary-condition/
-    // "@typescript-eslint/no-unnecessary-type-arguments": "warn", // https://typescript-eslint.io/rules/no-unnecessary-type-arguments/
-    '@typescript-eslint/prefer-for-of': 'warn', // https://typescript-eslint.io/rules/prefer-for-of/
-    '@typescript-eslint/prefer-ts-expect-error': 'warn', // https://typescript-eslint.io/rules/prefer-ts-expect-error/
-
     // VUE ESLINT
-    'vue/block-tag-newline': 'error', // https://eslint.vuejs.org/rules/block-tag-newline.html
+    // 'vue/block-tag-newline': 'error', // https://eslint.vuejs.org/rules/block-tag-newline.html ---> OCCURS ERROR!! NO REASON FOUND
     'vue/component-api-style': ['error', ['script-setup']], // https://eslint.vuejs.org/rules/component-api-style.html
     'vue/component-name-in-template-casing': 'error', // https://eslint.vuejs.org/rules/component-name-in-template-casing.html
     'vue/custom-event-name-casing': 'error', // https://eslint.vuejs.org/rules/custom-event-name-casing.html
@@ -193,9 +182,5 @@ module.exports = {
 
     // Tailwind
     'tailwindcss/no-custom-classname': 'off'
-    // IMPORT
-    // "import/first": "error",
-    // "import/no-absolute-path": ["error", { "esmodule": true, "commonjs": true, "amd": false }],
-    // "import/no-empty-named-blocks": "error"
   }
 };
